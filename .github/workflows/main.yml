@@ -40,9 +40,10 @@ jobs:
     if: github.ref == 'refs/heads/main' # Only deploy from main branch
     needs: test
     defaults:
-    run:
-    working-directory: ./
-  steps:
+     run:
+      working-directory: ./
+    
+    steps:
     - name: checkout code
       uses: actions/checkout@v4
 
